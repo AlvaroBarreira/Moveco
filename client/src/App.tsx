@@ -1,11 +1,13 @@
- 
+import React from 'react'
+
 const App = () => {
-    return (
-        <>
-            
-        </>
-    );
-};
 
-export default App;
 
+  return (
+    <div>
+     
+    </div>
+  )
+}
+
+export default App
