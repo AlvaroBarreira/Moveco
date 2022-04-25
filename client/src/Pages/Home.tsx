@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const NotFound = () => {
+export const Home: React.FC = () => {
     return (
         <>
-            
+           <div>Home</div> 
         </>
     );
 };

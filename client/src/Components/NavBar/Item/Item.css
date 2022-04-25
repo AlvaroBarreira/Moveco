@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+.link-navBar {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+    font-family: 'Barlow', sans-serif;
+}
+
+
+.link-navBar {
+    text-decoration: none;
+    margin: 0 12px;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+.link-navBar:hover {
+    color: #2521d8;
+}

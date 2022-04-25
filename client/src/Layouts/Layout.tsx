@@ -5,14 +5,12 @@ interface Props {
     children: JSX.Element
 }
 
-const Layout = ({children} : Props) => {
+export const Layout = ({children} : Props) => {
   return (
     <>  
-        <Navbar values={{value: 'template'}}/> 
+        <Navbar/> 
             {children}
         <Footer values={{value: 'template'}} />
     </>
   )
 }
-
-export default Layout

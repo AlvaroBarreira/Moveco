@@ -1,13 +1,15 @@
 import React from 'react'
-
+import { PublicRoutes } from './Routes/PublicRoutes'
 const App = () => {
 
 
   return (
-    <div>
-     
-    </div>
+    <PublicRoutes/>
   )
 }
 
 export default App
+
+
+
+

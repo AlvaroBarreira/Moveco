@@ -1,25 +1,24 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Item } from './Item/Item';
+import './Navbar.css'
+import { titles } from '../../Utils/Navbar.utils'
 
-interface NavbarProps {
-    titles: Array<object>;
-}
 
-export const Navbar: React.FC<NavbarProps> = ({ titles }) => {
+export const Navbar: React.FC = () => {
     return (
         <div className="navbar">
             <div className="navbar-column">
                 <div className="logo">
                     <Link to="/">
-                        {/* <img src={logo}></img> */}
-                        Example
+                        {/* <img className='logo-image' src={logo}></img> */}
+                        Moveco
                     </Link>
                 </div>
             </div>
             <div className="navbar-column links">
                 {titles.map((title) => {
-                    return <Item title={title} />;
+                    return <Item item={title.item}  />
                 })}
             </div>
         </div>

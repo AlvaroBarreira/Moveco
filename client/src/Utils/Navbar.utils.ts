@@ -1,8 +1,7 @@
-export const column_titles = [
+export const titles = [
 
     {
         item: 'Home'
-
     },
     {
         item: 'About us'
