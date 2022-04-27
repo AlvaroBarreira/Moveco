@@ -1,7 +1,8 @@
 import React from 'react'
 import { PublicRoutes } from './Routes/PublicRoutes'
-const App = () => {
+import './App.css'
 
+const App = () => {
 
   return (
     <PublicRoutes/>
