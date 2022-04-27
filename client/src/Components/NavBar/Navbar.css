@@ -27,7 +27,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: rgb(204, 204, 204);
+  color: rgb(255, 255, 255);
 }
 
 .nav {
@@ -35,7 +35,8 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 8vh;
-  background: rgb(0, 33, 65);
+  background:rgb(56 182 255);
+ 
 }
 .nav__brand {
   text-transform: uppercase;
@@ -55,7 +56,7 @@ a {
   width: 2.5rem;
   height: 0.2rem;
   margin: 0.4rem;
-  background: rgb(204, 204, 204);
+  background: rgb(255, 253, 253);
   transition: 0.3s ease-in;
 }
 
@@ -73,7 +74,7 @@ a {
     right: 0;
     height: 93vh;
     width: 50vw;
-    background: rgb(0, 33, 65);
+    background: rgb(56 182 255);
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;
