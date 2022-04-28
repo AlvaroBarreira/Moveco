@@ -5,12 +5,12 @@ interface Props {
     children: JSX.Element
 }
 
-export const Layout = ({children} : Props) => {
-  return (
-    <>  
-        <Navbar/> 
+export const Layout = ({ children }: Props) => {
+    return (
+        <>
+            <Navbar />
             {children}
-        <Footer values={{value: 'template'}} />
-    </>
-  )
+            <Footer values={{ value: 'template' }} />
+        </>
+    )
 }
