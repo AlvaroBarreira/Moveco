@@ -1,7 +1,7 @@
 import React from 'react';
 
  
-import './footer.css';
+import './Footer.css';
 import { meetUs, help, ordersAndDelivery, icons } from '../../utils/Footer.utils';
 import { Icon } from './Icon/Icon';
 import { ItemMap } from './ItemMap/ItemMap';
