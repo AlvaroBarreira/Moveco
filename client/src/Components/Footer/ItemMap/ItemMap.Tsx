@@ -5,22 +5,22 @@ interface PropsItemMap {
     array: PropsItem[]
 }
 
-type PropsItem = {
+interface PropsItem  {
     sentence: string,
     link: string
 }
 
-export const ItemMap = ({array}: PropsItemMap) => {
-  return (
-    <>
-       {
-                
-                array.map((item: PropsItem ) => {
+export const ItemMap = ({ array }: PropsItemMap) => {
+    return (
+        <>
+            {
+
+                array.map((item: PropsItem) => {
                     return <ItemFooter key={item.sentence} item={item} />
                 })
             }
-    </>
-  )
+        </>
+    )
 }
- 
+
 

@@ -24,3 +24,10 @@
 .link-navBar:hover {
     color: #2521d8;
 }
+.nav__link{
+    font-family: 'Barlow', sans-serif;
+}
+
+.nav__item{
+    list-style: none;
+}

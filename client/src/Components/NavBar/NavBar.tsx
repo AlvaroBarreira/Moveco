@@ -5,6 +5,16 @@ import './Navbar.css'
 import { titles } from '../../Utils/Navbar.utils'
 
 
+
+
+
+interface PropsItem  {
+    item: string,
+    route: string,
+    class_name_li: string,
+    class_name_link: string
+}
+
 export const Navbar: React.FC = () => {
 
 
@@ -27,35 +37,23 @@ export const Navbar: React.FC = () => {
      
     return (
         <nav className="nav">
-            <a href="#" className="nav__brand">
+            <Link to='#' className="nav__brand">
                 Moveco
-            </a>
+            </Link>
             <ul className={active}>
-                <li className="nav__item">
-                    <a href="#" className="nav__link">
-                        Home
-                    </a>
-                </li>
-                <li className="nav__item">
-                    <a href="#" className="nav__link">
-                        About
-                    </a>
-                </li>
-                <li className="nav__item">
-                    <a href="#" className="nav__link">
-                        Portfolio
-                    </a>
-                </li>
-                <li className="nav__item">
-                    <a href="#" className="nav__link">
-                        Skills
-                    </a>
-                </li>
-                <li className="nav__item">
-                    <a href="#" className="nav__link">
-                        Contact
-                    </a>
-                </li>
+
+                {
+                    titles.map((title: PropsItem) => {
+                        return <Item  title={title} key={title.item} />
+                    })
+               
+
+                    // array.map((item: PropsItem) => {
+                    //     return <ItemFooter key={item.sentence} item={item} />
+                    // })
+
+                }
+                
             </ul>
             <div onClick={navToggle} className={icon}>
                 <div className="line1"></div>
