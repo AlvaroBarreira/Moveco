@@ -13,10 +13,7 @@
 
 .div-main-nav{
   background-image: url('portada.jpeg');
-  background-color: rgba(0,0,0,0.5);
-
   
-  transition-duration: 20s;
   background-size:cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -27,17 +24,20 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
- 
-  background-color: hsla(0, 0%, 0%, 0);
-
   z-index: 1000;
  
 }
 
-/* .nav::before {
+.nav::before {
   content: '';
-  opacity: .3;
-} */
+  opacity: .2;
+  background-color:rgb(55 217 239);
+  display: block;
+  width: 100vw;
+  height: 910px;
+  position: absolute;
+  z-index: 5000;
+}
 
 
 .nav__brand {
@@ -77,9 +77,14 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .nav__toggler, .nav__menu{
+    z-index: 10000;
+  }
   .nav__toggler {
     display: block;
     cursor: pointer;
+    
   }
 
   .nav__menu {
