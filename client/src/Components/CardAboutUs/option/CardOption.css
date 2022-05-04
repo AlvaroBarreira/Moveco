@@ -1,5 +1,5 @@
- 
- 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 .outer-div,
 .inner-div {
@@ -102,14 +102,15 @@
   font-family: "Montserrat";
   font-size: 18px;
   backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
 
 }
 
 
 .front__text-header {
-    font-weight: 700;
-    font-family: "Oswald";
-    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    
     font-size: 20px;
   }
 
@@ -136,18 +137,18 @@
     position: relative;
     top: 10px;
     font-size: 10px;
-    color: tomato;
+    left: 75px;
     backface-visibility: hidden;
-
+    width: 40%;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .4px;
-
-    border: 2px solid tomato;
+    font-family: 'Barlow', sans-serif;
+    border: 2px solid rgb(51, 93, 246);
     padding: 8px 15px;
     border-radius: 30px;
 
-    background: tomato;
+    background: rgb(51, 93, 246);
     color: #fff;
   }
 
@@ -214,4 +215,22 @@
   top: -5px;
   color:white;
   background-color: wheat;
+}
+
+.back-text-container{
+  width: 80%;
+  margin: 0 auto;
+  height: 40%;
+}
+
+
+.back-text{
+  font-family: 'Barlow', sans-serif;
+  font-size: small;
+  width: auto;
+  height: auto;
+  line-height: 0.7;
+  
+  
+  
 }
