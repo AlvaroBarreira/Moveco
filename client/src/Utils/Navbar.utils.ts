@@ -8,7 +8,7 @@ export const titles = [
     },
     {
         item: 'About us',
-        route: '#',
+        route: 'aboutUs',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     },
