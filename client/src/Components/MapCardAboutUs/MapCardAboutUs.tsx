@@ -12,7 +12,7 @@ export const MapCardAboutUs: React.FC<MapCardAboutUsProps> = ({  }) => {
         <div className='aboutUsContainer'>
             {
                 cardAboutUs.map(card => {
-                    return <CardOption key={card.id}/>
+                    return <CardOption key={card.id} card={card} />
                 })
             }
         </div>
