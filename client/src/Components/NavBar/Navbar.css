@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
-
-
-
-
-
-
-
-
-
-
 .div-main-nav{
   background-image: url('portada.jpeg');
-  
   background-size:cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -45,14 +34,11 @@
   font-family: 'Barlow', sans-serif;
   text-decoration: none;
   font-weight: 400;  
-
-  font-family: 'Barlow', sans-serif;
-  text-decoration: none;
   color: rgb(255, 255, 255);
-  font-weight: 400;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 1.5rem;
+  z-index: 20000;
 
 }
 
@@ -61,10 +47,12 @@
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
+  z-index: 20000;
 }
 
 .nav__toggler {
   display: none;
+  z-index: 20000;
 }
 
 .nav__toggler div {
@@ -73,6 +61,7 @@
   margin: 0.4rem;
   background: rgb(255, 253, 253);
   transition: 0.3s ease-in;
+  z-index: 20000;
 }
 
 
@@ -108,7 +97,7 @@
 /* Toggle Icon Animation */
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-4px, 5px);
+  transform: rotate(-50deg) translate(-5px, 9px);
 }
 
 .toggle .line2 {
@@ -116,5 +105,5 @@
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(50deg) translate(-5px, -9px);
 }
