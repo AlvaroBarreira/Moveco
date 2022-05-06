@@ -3,9 +3,16 @@ import { Link  } from 'react-router-dom';
 import './ItemFooter.css'
 
 
-export const ItemFooter = ({item}) => {
+interface itemProps {
+	item: {
+		sentence: string,
+		link: string
+	}
+}
 
-    const {link } = item
+export const ItemFooter = ({item}: itemProps) => {
+
+    const { link } = item
 
   return (
     <Link key={item.sentence} to={link} >{item.sentence}</Link>  

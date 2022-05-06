@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap%27');
+
+.form-container {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin: 120px auto;
+    border-radius: 5px;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form-container .form-aside {
+    width: 55%;
+    background-image: url('../../Assets/recycle.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.form-container .form {
+    width: 45%;
+    background: #185642;
+    border-radius: 0 5px 5px 0;
+}
+
+.form-container .form .form-title-container h2 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 35px;
+    display: flex;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.form-container .form .form-inputs-container {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container .form .form-input-container {
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.form-container .form .form-input-container input {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-container .form .form-input-container input::placeholder {
+    font-family: 'Barlow', sans-serif;
+}
+
+.form-container .form .form-textarea-container {
+    display: block;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.form-container .form .form-textarea-container textarea {
+    border: none;
+    outline: none;
+    height: 150px;
+    width: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto auto 20px auto;
+    display: flex;
+}
+
+.form-container .form .form-button-container {
+    justify-content: right;
+    margin-top: 20px;
+    font-size: 35px;
+    display: flex;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.form-container .form .form-button-container button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #008942;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .form-container {
+        display: flex;
+        width: 800px;
+        height: 500px;
+        margin: 120px auto;
+        border-radius: 5px;
+        font-family: 'Barlow', sans-serif;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    .form-container .form-aside {
+        width: 55%;
+        background-image: url('../../Assets//recycle.jpg');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 5px 0 0 5px;
+    }
+    
+    .form-container .form {
+        width: 45%;
+        background: #185642;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    .form-container .form .form-title-container h2 {
+        text-align: left;
+        margin-top: 20px;
+        font-size: 18px;
+        display: flex;
+        width: 270px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+    }
+    
+    .form-container .form .form-inputs-container {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .form-container .form .form-input-container {
+        display: flex;
+        margin: 20px auto;
+        justify-content: center;
+    }
+    
+    .form-container .form .form-input-container input {
+        border: none;
+        outline: none;
+        height: 30px;
+        width: 270px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    .form-container .form .form-input-container input::placeholder {
+        font-family: 'Barlow', sans-serif;
+        font-size: 11px;
+    }
+    
+    .form-container .form .form-textarea-container {
+        display: block;
+        margin: 20px auto;
+        justify-content: center;
+    }
+    
+    .form-container .form .form-textarea-container textarea {
+        border: none;
+        outline: none;
+        height: 150px;
+        width: 270px;
+        border-radius: 5px;
+        padding: 10px;
+        margin: auto auto 20px auto;
+        display: flex;
+    }
+    
+    .form-container .form .form-button-container {
+        justify-content: right;
+        margin-top: 20px;
+        font-size: 35px;
+        display: flex;
+        width: 270px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white;
+    }
+    
+    .form-container .form .form-button-container button {
+        width: 80px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        background-color: #008942;
+        color: white;
+        font-size: 11px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .form-container .form .form-input-container input::placeholder {
+        font-size: 17px;
+    }
+    
+    .form-container {
+        display: block;
+        width: 600px;
+        height: 600px;
+    }
+
+    .form-container .form-aside {
+        display: none;
+    }
+    
+    .form-container .form {
+        width: 100%;
+        height: 100%;
+        background-image: url('../../Assets/recycle.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+        background-color: transparent;
+        border-radius: 5px;
+        z-index: 999999;
+    }
+
+    .form-container .form .form-inputs-container {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }   
+
+    .form-container .form .form-textarea-container {
+        display: flex;
+    }
+
+    .form-container .form .form-input-container input {
+        z-index: 9999999;
+        width: 400px;
+        height: 60px;
+    }
+
+    .form-container .form .form-textarea-container textarea {
+        z-index: 9999999;
+        width: 400px;
+    }
+
+    .form-container .form .form-button-container {
+        width: 400px;
+    }
+
+    .form-container .form .form-button-container button {
+        z-index: 9999999;
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .form-container .form .form-title-container {
+        display: flex;
+        width: 400px;
+        margin: auto;
+    }
+
+    .form-container .form .form-title-container h2 {
+        z-index: 9999999;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .form-container {
+        display: block;
+        width: 400px;
+        height: 600px;
+    }
+
+    .form-container .form .form-input-container input {
+        z-index: 9999999;
+        width: 300px;
+        height: 60px;
+    }
+
+    .form-container .form .form-textarea-container textarea {
+        z-index: 9999999;
+        width: 300px;
+    }
+
+    .form-container .form .form-title-container {
+        display: flex;
+        width: 300px;
+        margin: auto;
+    }
+
+    .form-container .form .form-button-container {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .form-container {
+        display: block;
+        width: auto;
+        margin: 20px;
+        height: 600px;
+    }
+
+    .form-container .form .form-input-container input {
+        z-index: 9999999;
+        width: 300px;
+        height: 60px;
+    }
+
+    .form-container .form .form-textarea-container textarea {
+        z-index: 9999999;
+        width: 300px;
+    }
+
+    .form-container .form .form-title-container {
+        display: flex;
+        width: 300px;
+        margin: auto;
+    }
+
+    .form-container .form .form-button-container {
+        width: 300px;
+    }
+}
+
+

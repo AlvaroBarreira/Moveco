@@ -4,7 +4,7 @@ import { Slider } from '../Components/Slider/Slider'
 export const Home: React.FC = () => {
     return (
         <>
-           <Slider/>
+        <h1>Home</h1>
         </>
     );
 };

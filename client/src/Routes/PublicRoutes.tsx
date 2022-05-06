@@ -6,25 +6,20 @@ import {
     Navigate,
 } from "react-router-dom";
 
-import { NotFound, Layout,Home, AboutUs  } from "./index";
-
-
+import { NotFound, Layout, Home, Contact, AboutUs } from "./index";
 
 export const PublicRoutes = () => {
-
-
-
 
     return (
         <Router>
              <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/contacto" element={<Contact />} />
                     <Route path="/aboutUs" element={<AboutUs />} />
                     {/* <Route path="*" element={<NotFound />} /> */}
                 </Routes>
             </Layout>
-
           {/*  <Routes>
                 <Route
                     path="/backoffice/*"
