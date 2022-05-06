@@ -3,7 +3,7 @@
 .form-container {
     display: flex;
     width: 1200px;
-    height: 600px;
+    height: 650px;
     margin: 120px auto;
     border-radius: 5px;
     font-family: 'Barlow', sans-serif;
@@ -106,7 +106,7 @@
     .form-container {
         display: flex;
         width: 800px;
-        height: 500px;
+        height: 550px;
         margin: 120px auto;
         border-radius: 5px;
         font-family: 'Barlow', sans-serif;
@@ -195,7 +195,7 @@
     
     .form-container .form .form-button-container button {
         width: 80px;
-        height: 30px;
+        height: 40px;
         border: none;
         outline: none;
         border-radius: 15px;
@@ -215,7 +215,7 @@
     .form-container {
         display: block;
         width: 600px;
-        height: 600px;
+        height: 690px;
     }
 
     .form-container .form-aside {
@@ -286,7 +286,7 @@
     .form-container {
         display: block;
         width: 400px;
-        height: 600px;
+        height: 700px;
     }
 
     .form-container .form .form-input-container input {
@@ -318,7 +318,7 @@
         display: block;
         width: auto;
         margin: 20px;
-        height: 600px;
+        height: 720px;
     }
 
     .form-container .form .form-input-container input {
