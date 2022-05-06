@@ -2,15 +2,12 @@ import React, { useState } from 'react'
 import './Subscribe.css'
 
 
-
- 
 export const Subscribe = () => {
 
     const [inputValue, setInputValue] = useState('Escribe tu email para recibir ofertas')
+    
     const [Error, setError] = useState(false);
 
-
-    
     const handleChange = (e: React.FormEvent<HTMLInputElement>) => setInputValue(e.currentTarget.value);
 
     const handleSubscribe = () => {
@@ -34,8 +31,6 @@ export const Subscribe = () => {
 
     }
 
-
-
     const ErrorMessage = () => {
         if (Error) return <span className='error'>Por favor ingrese un email válido</span>;
 
@@ -43,11 +38,11 @@ export const Subscribe = () => {
 
     return (
 
-        <div>
+        <div className="email-container">
             {ErrorMessage()}
             <div className='email'>
-                <input type="text" value={inputValue} className='input' onChange={handleChange} />
-                <button onClick={handleSubscribe} className='button'>Subscribe</button>
+                <input type="text" placeholder="Escribe tu email para recibir ofertas" className='input' onChange={handleChange} />
+                <button onClick={handleSubscribe} className='button'>Subscribirse</button>
             </div>
         </div>
 

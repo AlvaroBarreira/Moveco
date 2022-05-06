@@ -1,11 +1,12 @@
-import { Facebook, Youtube, Google, Twitter, Pinterest } from '../components/footer/svg/Icons.svg'
-
+import facebookIcon from '../Assets/Icons/facebook-icon.svg';
+import instagramIcon from '../Assets/Icons/instagram-icon.svg';
+import twitterIcon from '../Assets/Icons/twitter-icon.svg';
 
 export const meetUs = [
     
     {
-     sentence: '¿Quienes somos?',
-     link: '/'
+        sentence: '¿Quienes somos?',
+        link: '/'
     },
 
     {
@@ -55,48 +56,26 @@ export const ordersAndDelivery = [
     }
 
     ]  
-
-
+    
 export const icons = [
+        {
+            name: 'facebook-icon',
+            id: 1,
+            image: facebookIcon
+        },
+    
+        {
+            name: 'instagram-icon',
+            id: 2,
+            image: instagramIcon
+        },
 
-    {
-        CLASS_NAME: 'icon',
-        link: '/',
-        id: '0',
-        iconSvg: Facebook
-     },
-
-    {
-        CLASS_NAME: 'icon',
-        link: '/',
-        id: '1',
-        iconSvg: Twitter
-    },
-    {
-        CLASS_NAME: 'icon',
-        link: '/',
-        id: '2',
-        iconSvg: Youtube
-    },
-
-    {
-        CLASS_NAME: 'icon',
-        link: '/',
-        id: '3',
-        iconSvg: Pinterest
-    },
-
-    {
-        CLASS_NAME: 'icon',
-        link: '/',
-        id: '4',
-        iconSvg: Google
-    }
-        
-    ]  
-
-
-
+        {
+            name: 'twitter-icon',
+            id: 3,
+            image: twitterIcon
+        }
+    ]
 
 
     

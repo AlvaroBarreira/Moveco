@@ -1,0 +1,47 @@
+.error-message {
+    text-align: left;
+    width: 400px;
+    font-weight: 600;
+    color: #fa4141;
+    position: relative;
+    margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+    .error-message {
+        text-align: left;
+        width: 270px;
+        font-size: 11px;
+        font-weight: 600;
+        color: #fa4141;
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    .error-message {
+        z-index: 99999999;
+        width: 400px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 700px) { 
+    .error-message {
+        z-index: 99999999;
+        width: 300px;
+        font-weight: 600;
+    }
+}
+
+
+@media screen and (max-width: 500px) { 
+    .error-message {
+        z-index: 99999999;
+        width: 300px;
+        font-weight: 600;
+    }
+}
