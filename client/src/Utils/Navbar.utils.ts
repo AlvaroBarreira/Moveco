@@ -1,16 +1,28 @@
 export const titles = [
 
     {
-        item: 'Home'
+        item: 'Home',
+        route: '#',
+        class_name_li: 'nav__item',
+        class_name_link: 'nav__link'
     },
     {
-        item: 'About us'
+        item: 'About us',
+        route: 'aboutUs',
+        class_name_li: 'nav__item',
+        class_name_link: 'nav__link'
     },
     {
-        item: 'Contact'
+        item: 'Contact',
+        route: '#',
+        class_name_li: 'nav__item',
+        class_name_link: 'nav__link'
     },
     {
-        item: 'What we make'
+        item: 'What we make',
+        route: '#',
+        class_name_li: 'nav__item',
+        class_name_link: 'nav__link'
     }
 ]
 

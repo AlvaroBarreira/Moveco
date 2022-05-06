@@ -6,7 +6,7 @@ import {
     Navigate,
 } from "react-router-dom";
 
-import { NotFound, Layout, Home, Contact } from "./index";
+import { NotFound, Layout, Home, Contact, AboutUs } from "./index";
 
 export const PublicRoutes = () => {
 
@@ -16,6 +16,7 @@ export const PublicRoutes = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/contacto" element={<Contact />} />
+                    <Route path="/aboutUs" element={<AboutUs />} />
                     {/* <Route path="*" element={<NotFound />} /> */}
                 </Routes>
             </Layout>
