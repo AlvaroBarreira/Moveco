@@ -8,13 +8,13 @@ export const titles = [
     },
     {
         item: 'About us',
-        route: 'aboutUs',
+        route: 'nosotros',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     },
     {
         item: 'Contact',
-        route: '/',
+        route: 'contacto',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     },
