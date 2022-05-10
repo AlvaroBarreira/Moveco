@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
-import { Link } from "react-router-dom";
-import { Item } from './Item/Item';
+import { Link, useLocation } from "react-router-dom";
+import { ItemNav } from './ItemNav/ItemNav';
 
 import { titles } from '../../Utils/Navbar.utils'
 
@@ -19,6 +19,8 @@ interface PropsItem {
 export const Navbar: React.FC = () => {
 
 
+
+    const [classImg, setClassImg] = useState('')
     const [active, setActive] = useState("nav__menu");
     const [icon, setIcon] = useState("nav__toggler");
 
@@ -34,10 +36,43 @@ export const Navbar: React.FC = () => {
     };
 
 
+    const route = useLocation().pathname
+
+    const routeFunction = route => {
+
+
+        console.log(route)
+
+        switch (route) {
+            case '/home':
+                setClassImg('div-main-navimg-bg-nav-home')
+                break;
+            case '/nosotros':
+                setClassImg('div-main-nav img-bg-nav-quienes-somos')
+                break;
+            case '/contacto':
+                setClassImg('div-main-nav img-bg-nav-contacto')
+                break;
+
+
+
+            default:
+                setClassImg('div-main-nav img-bg-nav-home')
+
+                break;
+        }
+
+
+    }
+
+    useEffect(() => {
+        routeFunction(route)
+
+    }, [route])
 
 
     return (
-        <div className='div-main-nav'>
+        <div className={classImg}>
 
             <nav className="nav">
                 <Link to='#' className="nav__brand">
@@ -47,7 +82,7 @@ export const Navbar: React.FC = () => {
 
                     {
                         titles.map((title: PropsItem) => {
-                            return <Item title={title} key={title.item} />
+                            return <ItemNav title={title} key={title.item} />
                         })
 
 

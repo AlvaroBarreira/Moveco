@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
-.div-main-nav{
+/* .img-bg-nav{
   background-image: url('portada.jpeg');
+} */
+
+.img-bg-nav-home{
+  background-image: url('portada.jpeg');
+}
+
+.img-bg-nav-quienes-somos{
+  background-image: url('./NavbarImg/bull.jpg');
+}
+
+.img-bg-nav-contacto{
+  background-image: url('./NavbarImg/glass.jpg');
+}
+
+
+.div-main-nav{
+ 
   background-size:cover;
   background-repeat: no-repeat;
   width: 100%;
