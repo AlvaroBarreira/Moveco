@@ -177,7 +177,7 @@
 
 .social-icon {
     position: relative;
-    top: 20px;
+    top: 80px;
     margin-left: 5px;
     margin-right: 5px;
     opacity: 0;
@@ -217,11 +217,22 @@
   background-color: wheat;
 }
 
+/* .back-text-container::after{
+  content: 'hola fgdf gfd gdfgdsfgdsf sfd gsdf dsfgdf dsf gdsf gdsf gsdf sdfg dsfg dfs gdsfg ';
+  font-family: 'Barlow', sans-serif;
+  font-size: small;
+  width: auto;
+  height: auto;
+  line-height: 0.7;
+  
+} */
+
 .back-text-container{
-  width: 80%;
+  width: auto;
   margin: 0 auto;
-  height: 40%;
+  height: 10px;
 }
+
 
 
 .back-text{
@@ -233,4 +244,15 @@
   
   
   
+}
+
+.occupation-text{
+  font-size: larger;
+}
+
+
+.icon-container{
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
