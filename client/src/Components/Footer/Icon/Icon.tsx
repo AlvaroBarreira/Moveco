@@ -1,21 +1,21 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom'
+import './Icon.css';
+
+interface Props {
+    image: string
+} 
+
+export const Icon = ( { image }: Props ) => {
 
 
-export const Icon = ({item}) => {
-
-    const { link, CLASS_NAME } = item;
-  
-
-  return (
-  
-    <item.iconSvg>
-      <Link to={link}><i className={CLASS_NAME}>{item.iconSvg}</i></Link> 
-   </item.iconSvg>
-  )
+    return (
+        <>
+            <Link to="#!" type="button" className="link-svg">
+               <img src={image} alt="" className="link-img"/>
+            </Link>
+        </>
+    )
 }
 
-
-
-
-  
+export default Icon;
