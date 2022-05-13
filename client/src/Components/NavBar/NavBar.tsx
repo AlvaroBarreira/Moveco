@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ItemNav } from './ItemNav/ItemNav';
 
 import { titles } from '../../Utils/Navbar.utils'
+import { string } from 'yup/lib/locale';
 
 
 
@@ -38,6 +39,7 @@ export const Navbar: React.FC = () => {
 
     const route = useLocation().pathname
 
+ 
     const routeFunction = route => {
 
 

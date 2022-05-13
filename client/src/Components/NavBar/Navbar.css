@@ -6,11 +6,11 @@
 } */
 
 .img-bg-nav-home{
-  background-image: url('portada.jpeg');
+  background-image: url('./NavbarImg/bull.jpg');
 }
 
 .img-bg-nav-quienes-somos{
-  background-image: url('./NavbarImg/bull.jpg');
+  background-image: url('./NavbarImg/cans.jpg');
 }
 
 .img-bg-nav-contacto{

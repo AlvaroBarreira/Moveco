@@ -7,20 +7,20 @@ export const titles = [
         class_name_link: 'nav__link'
     },
     {
-        item: 'About us',
+        item: 'nosotros',
         route: 'nosotros',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     },
     {
-        item: 'Contact',
+        item: 'contacto',
         route: 'contacto',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     },
     {
-        item: 'What we make',
-        route: '/',
+        item: 'obras',
+        route: 'obras',
         class_name_li: 'nav__item',
         class_name_link: 'nav__link'
     }
