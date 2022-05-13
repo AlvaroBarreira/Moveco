@@ -1,35 +1,53 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MapIcons from '../MapIcons/MapIcont';
 import './CardAboutUs.css'
+import {Instagram, Facebook} from '../../Svg/index'
 
-interface CardABoutUtProps {
 
-    
+interface CardAboutUsProps {
+    card: CardAboutUsObj
 }
 
-export const CardABoutUs: React.FC<CardABoutUtProps> = ({ }) => {
+interface CardAboutUsObj {
+    name: string,
+    surname: string,
+    ocupation: string,
+    description: string,
+    Icons: Array<Object>,
+}
+
+ 
+
+export const CardAboutUs: React.FC<CardAboutUsProps> = ({card}) => {
     return (
         <>
-        
-
             <div className="outer-div">
                 <div className="inner-div">
                     <div className="front">
                         <div className="front__bkg-photo"></div>
                         <div className="front__face-photo"></div>
                         <div className="front__text">
-                            <h3 className="front__text-header">Bobby Korec</h3>
-                            <p className="front__text-para"><i className="fas fa-map-marker-alt front-icons"></i>Seattle</p>
+                            <span className="front__text-header">{card.name}</span>
+                            <span className="front__text-header">{card.surname}</span>
 
                             <span className="front__text-hover">Más sobre mi</span>
                         </div>
                     </div>
                     <div className="back">
                         <div className="social-media-wrapper">
-                            <Link to="#" className="social-icon"><i className="fab fa-codepen" aria-hidden="false">Hola</i></Link>
-                            <Link to="#" className="social-icon"><i className="fab fa-github-square" aria-hidden="true"></i></Link>
-                            <Link to="#" className="social-icon"><i className="fab fa-linkedin-square" aria-hidden="true"></i></Link>
-                            <Link to="#" className="social-icon"><i className="fab fa-instagram" aria-hidden="true"></i></Link>
+                        <span className='back-text occupation-text'>{card.ocupation}</span>
+                            <div className='back-text-container'>
+                            
+                            <span className='back-text'>{card.description}</span>
+                            </div>
+                            <div className='icon-container'>
+                            <Link to="#" className="social-icon"><Instagram  aria-hidden="true"></Instagram></Link>
+                            <Link to="#" className="social-icon"><Facebook aria-hidden="true"></Facebook></Link>
+                            </div>
+
+
+                            {/* <MapIcons obj={card.Icons} /> */}
                         </div>
                     </div>
 
@@ -39,4 +57,4 @@ export const CardABoutUs: React.FC<CardABoutUtProps> = ({ }) => {
     );
 };
 
- 
+

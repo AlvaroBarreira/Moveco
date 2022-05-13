@@ -1,5 +1,19 @@
-.aboutUsContainer{
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+.aboutUsContainer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.nosotros-span {
+
+    font-family: 'Barlow', sans-serif;
+    font-size:100px;
+    line-height: 0.7;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
 }

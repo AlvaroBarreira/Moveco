@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 
-.div-main-nav{
+/* .img-bg-nav{
   background-image: url('portada.jpeg');
+} */
+
+.img-bg-nav-home{
+  background-image: url('portada.jpeg');
+}
+
+.img-bg-nav-quienes-somos{
+  background-image: url('./NavbarImg/bull.jpg');
+}
+
+.img-bg-nav-contacto{
+  background-image: url('./NavbarImg/glass.jpg');
+}
+
+
+.div-main-nav{
+ 
   background-size:cover;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 500px;
 }
 .nav {
@@ -22,8 +39,8 @@
   opacity: .2;
   background-color:rgb(55 217 239);
   display: block;
-  width: 100vw;
-  height: 910px;
+  width: 100%;
+  height: 918px;
   position: absolute;
   z-index: 5000;
 }
@@ -87,6 +104,9 @@
     transform: translateX(100%);
     transition: 0.5s ease-in;
   }
+
+
+  
 }
 
 /* Active Class */
@@ -106,4 +126,15 @@
 
 .toggle .line3 {
   transform: rotate(50deg) translate(-5px, -9px);
+}
+
+
+
+@media screen and (max-width: 1740px) {
+  .nav::before {
+ 
+    height: 933px;
+    
+  }
+
 }
